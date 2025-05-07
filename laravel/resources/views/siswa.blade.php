@@ -42,7 +42,7 @@
                         <td>{{ $s->nama_kelas }}</td>
                         <td>{{ $s->nama_wali }}</td>
                         <td>
-                            <a href="edit_siswa.php?id={{ $s->id }}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/siswa/edit/{{ $s->id }}" class="btn btn-warning btn-sm">Edit</a>
                             <a href="/siswa/delete/{{ $s->id }}" class="btn btn-danger btn-sm" onclick = "return confirm('Yakin ingin menghapus?')">Hapus</a>
                         </td>
                     </tr>
