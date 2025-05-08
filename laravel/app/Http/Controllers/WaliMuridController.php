@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WaliMuridController extends Controller
 {
-    public function wali_murid()
+    public function index()
     {
-        return view('wali_murid');
+        $wali = DB::table('wali_murids')->get();
+        return view('wali_murid', ['wali' => $wali]);
     }
 }
