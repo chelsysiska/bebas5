@@ -76,7 +76,6 @@
                     @endforeach
                 </select>
             </div>
-
             <button type="submit" name="submit" class="btn btn-success">Simpan</button>
             <a href="/" class="btn btn-secondary">Kembali</a>
         </form>
